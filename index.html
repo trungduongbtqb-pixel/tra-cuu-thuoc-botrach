@@ -14,17 +14,45 @@
 }
 
 body{
-    background:#f5f7fa;
-    color:#860e0e;
+
+    background:
+
+    linear-gradient(
+        rgba(245,250,250,0.00),
+        rgba(245,250,250,0.00)
+    ),
+
+    url("images/bg-content.jpg");
+
+
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+
+
+    color:#333;
+
 }
 
 header{
-    background:#00695c;
+
+    background:
+    linear-gradient(
+        rgba(0,105,92,0.85),
+        rgba(0,77,64,0.85)
+    ),
+    url("images/bg-header.jpg");
+
+    background-size:cover;
+    background-position:center;
+
     color:white;
     padding:25px 20px;
     position:relative;
     text-align:center;
     min-height:140px;
+
+    border-bottom:5px solid #00c9a7;
 }
 
 .logo{
@@ -112,7 +140,11 @@ header h1{
 
 .section{
     margin:30px 0;
-    background:white;
+
+    background:rgba(255,255,255,0.75);
+
+    backdrop-filter:blur(8px);
+
     padding:25px;
     border-radius:10px;
     box-shadow:0 0 10px rgba(0,0,0,0.08);
@@ -238,11 +270,13 @@ button{
 }
 
 .hospital-box{
-    background:white;
+    background:rgba(255,255,255,0.75);
+
+    backdrop-filter:blur(8px);
     border-radius:10px;
     overflow:hidden;
     margin-bottom:20px;
-    box-shadow:0 0 10px rgba(0,0,0,0.08);
+    box-shadow:0 0 10px rgba(218, 7, 7, 0.08);
 }
 
 .hospital-box img{
@@ -256,12 +290,13 @@ button{
 }
 
 .hospital-content h3{
-    color:#00796b;
+    color:#e01515;
     margin-bottom:10px;
 }
 
 .qr-box-side{
-    background:white;
+    background:rgba(255,255,255,0.75);
+    backdrop-filter:blur(8px);
     text-align:center;
     padding:20px;
     border-radius:10px;
@@ -655,6 +690,76 @@ body{
     transform:scale(1.1);
 
 }
+/* ===== ẢNH ĐỘNG TÁCH RIÊNG ===== */
+
+.drug-banner-animation{
+
+    width:100%;
+
+    height:200px;
+
+    margin-top:25px;
+
+    overflow:hidden;
+
+}
+
+
+.drug-banner-animation img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:fill;
+
+    display:block;
+
+    border-radius:0;
+
+    animation:drugMove 0.8s infinite alternate;
+
+}
+
+@keyframes drugMove{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.04);
+
+    }
+
+}
+
+.drug-banner-animation{
+    background:transparent !important;
+    border:none !important;
+    border-radius:0 !important;
+    box-shadow:none !important;
+    padding:0 !important;
+}
+
+
+.drug-banner-animation img{
+    background:transparent !important;
+    border:none !important;
+    border-radius:0 !important;
+}
+/* ===== LÀM MỜ KHUNG NỘI DUNG HỢP VỚI BACKGROUND 3 ===== */
+
+
+.main-layout{
+
+    position:relative;
+    z-index:2;
+
+}
 </style>
 
 </head>
@@ -858,6 +963,7 @@ placeholder="Nhập tên thuốc...">
 class="suggestion-box"></div>
 
 
+
 <button onclick="searchDrugName()">
 Tra cứu
 </button>
@@ -869,10 +975,15 @@ Tra cứu
 <div class="result"
 id="drugNameResult">
 </div>
+</div>
+<!-- ẢNH ĐỘNG DƯỚI THANH TÌM KIẾM -->
 
+<div class="drug-banner-animation">
+
+    <img src="images/anhdong.gif"
+    alt="Tra cứu thuốc">
 
 </div>
-
 
 </div>
 
