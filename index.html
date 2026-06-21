@@ -226,7 +226,11 @@ button{
 }
 
 .left-column{
-    flex:7;
+    flex:2;
+}
+
+.center-column{
+    flex:5;
 }
 
 .right-column{
@@ -441,6 +445,7 @@ button{
 }
 
 .mobile-view .left-column,
+.mobile-view .center-column,
 .mobile-view .right-column{
     width:100%;
 }
@@ -505,6 +510,151 @@ body{
     }
 
 }
+/* ===== NÚT FACEBOOK ===== */
+
+/* ===== LOGO FACEBOOK ===== */
+
+
+
+
+.facebook-btn img{
+
+    width:45px;
+
+    height:45px;
+
+    object-fit:contain;
+
+}
+
+
+.facebook-btn:hover{
+
+    transform:scale(1.1);
+
+    background:#0d5dcc;
+
+}
+/* ===== NHÓM LOGO LIÊN KẾT ===== */
+
+.social-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:15px;
+
+}
+
+
+.website-btn{
+
+    display:inline-flex;
+
+    width:70px;
+    height:70px;
+
+    justify-content:center;
+    align-items:center;
+
+    background:white;
+
+    border-radius:50%;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+
+    transition:0.3s;
+
+}
+
+
+
+
+.website-btn:hover{
+
+    transform:scale(1.1);
+
+}
+/* ===== CÂN ĐỐI LOGO FACEBOOK + WEBSITE ===== */
+
+.social-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:20px;
+
+}
+
+
+.facebook-btn,
+.website-btn{
+
+    width:65px;
+
+    height:65px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    transition:0.3s;
+
+}
+
+
+/* Facebook */
+
+.facebook-btn{
+
+    background:#1877f2;
+
+}
+
+
+/* Website */
+
+.website-btn{
+
+    background:white;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.25);
+
+}
+
+
+.facebook-btn img,
+.website-btn img{
+
+    width:38px;
+
+    height:38px;
+
+    object-fit:contain;
+
+}
+
+
+.facebook-btn:hover,
+.website-btn:hover{
+
+    transform:scale(1.1);
+
+}
 </style>
 
 </head>
@@ -562,145 +712,226 @@ body{
 
 <div class="main-layout">
 
-```
+
+<!-- CỘT TRÁI QR -->
+
 <div class="left-column">
 
-    <div class="section">
 
-        <h2 class="section-title">
-            1.	TRA CỨU THEO MÃ ATC
-        </h2>
+<div class="qr-box-side">
 
-        <div class="search-box">
+<h3>TRUY CẬP WEBSITE</h3>
 
-            <input type="text"
-                id="atcInput"
-                placeholder="Nhập mã ATC...">
+<br>
 
-                <div id="atcSuggestions"
-                class="suggestion-box"></div>
+<img src="images/qr.png"
+alt="QR Code">
 
-            <button onclick="searchATC()">
-                Tra cứu
-            </button>
+<p>
+Quét mã QR để tra cứu Thông tin thuốc
+</p>
+<div class="social-box">
 
-        </div>
 
-        <div class="result"
-             id="atcResult">
-        </div>
+<a class="facebook-btn"
+href="https://www.facebook.com/bvdkbotrach"
+target="_blank">
 
-    </div>
+<img src="images/facebook.png"
+alt="Facebook Bệnh viện">
 
-    <div class="section">
+</a>
 
-        <h2 class="section-title">
-            2.	TRA CỨU THEO TÊN HOẠT CHẤT, HÀM LƯỢNG
-        </h2>
 
-        <div class="search-box">
+<a class="website-btn"
+href="http://bvdakhoabotrach.vn/"
+target="_blank">
 
-           <input type="text"
-                id="activeInput"
-                placeholder="Nhập hoạt chất, hàm lượng...">
+<img src="images/website.png"
+alt="Website bệnh viện">
 
-                <div id="activeSuggestions"
-                class="suggestion-box"></div>
+</a>
 
-            <button onclick="searchActive()">
-                Tra cứu
-            </button>
 
-        </div>
+</div>
+</div>
 
-        <div class="result"
-             id="activeResult">
-        </div>
-
-    </div>
-
-    <div class="section">
-
-    <h2 class="section-title">
-        3. TRA CỨU THEO TÊN THUỐC
-    </h2>
-
-    <div class="search-box">
-        <input type="text"
-            id="drugNameInput"
-            placeholder="Nhập tên thuốc...">
-
-            <div id="drugSuggestions"
-            class="suggestion-box"></div>
-
-        <button onclick="searchDrugName()">
-            Tra cứu
-        </button>
-    </div>
-
-    <div class="result" id="drugNameResult"></div>
 
 </div>
 
+
+
+<!-- CỘT GIỮA TRA CỨU -->
+
+<div class="center-column">
+
+
+<div class="section">
+
+<h2 class="section-title">
+1. TRA CỨU THEO MÃ ATC
+</h2>
+
+
+<div class="search-box">
+
+<input type="text"
+id="atcInput"
+placeholder="Nhập mã ATC...">
+
+<div id="atcSuggestions"
+class="suggestion-box"></div>
+
+
+<button onclick="searchATC()">
+Tra cứu
+</button>
+
 </div>
+
+
+<div class="result"
+id="atcResult">
+</div>
+
+
+</div>
+
+
+
+
+<div class="section">
+
+
+<h2 class="section-title">
+2. TRA CỨU THEO HOẠT CHẤT
+</h2>
+
+
+<div class="search-box">
+
+<input type="text"
+id="activeInput"
+placeholder="Nhập hoạt chất...">
+
+
+<div id="activeSuggestions"
+class="suggestion-box"></div>
+
+
+<button onclick="searchActive()">
+Tra cứu
+</button>
+
+
+</div>
+
+
+<div class="result"
+id="activeResult">
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="section">
+
+
+<h2 class="section-title">
+3. TRA CỨU THEO TÊN THUỐC
+</h2>
+
+
+<div class="search-box">
+
+
+<input type="text"
+id="drugNameInput"
+placeholder="Nhập tên thuốc...">
+
+
+<div id="drugSuggestions"
+class="suggestion-box"></div>
+
+
+<button onclick="searchDrugName()">
+Tra cứu
+</button>
+
+
+</div>
+
+
+<div class="result"
+id="drugNameResult">
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- CỘT PHẢI HÌNH -->
 
 <div class="right-column">
 
-    <div class="hospital-box">
 
-        <img src="images/benhvien.jpg"
-             alt="Bệnh viện Đa khoa Bố Trạch">
+<div class="hospital-box">
 
-        <div class="hospital-content">
+<img src="images/benhvien.jpg"
+alt="Bệnh viện Đa khoa Bố Trạch">
 
-            <h3>
-                BỆNH VIỆN ĐA KHOA BỐ TRẠCH
-            </h3>
 
-            <p>
-                Hình ảnh tổng quan bệnh viện.
-            </p>
+<div class="hospital-content">
 
-        </div>
+<h3>
+BỆNH VIỆN ĐA KHOA BỐ TRẠCH
+</h3>
 
-    </div>
-
-    <div class="hospital-box">
-
-        <img src="images/doingu.jpg"
-             alt="Đội ngũ cán bộ">
-
-        <div class="hospital-content">
-
-            <h3>
-                ĐỘI NGŨ CÁN BỘ Y TẾ
-            </h3>
-
-            <p>
-                Chuyên nghiệp - Tận tâm - Hiệu quả.
-            </p>
-
-        </div>
-
-    </div>
-
-    <div class="qr-box-side">
-
-        <h3>TRUY CẬP WEBSITE</h3>
-
-        <br>
-
-        <img src="images/qr.png"
-             alt="QR Code">
-
-        <p>
-            Quét mã QR để tra cứu Thông tin thuốc
-        </p>
-
-    </div>
+<p>
+Hình ảnh tổng quan bệnh viện.
+</p>
 
 </div>
-```
+
+</div>
+
+
+
+
+<div class="hospital-box">
+
+
+<img src="images/doingu.jpg"
+alt="Đội ngũ cán bộ">
+
+
+<div class="hospital-content">
+
+<h3>
+ĐỘI NGŨ CÁN BỘ Y TẾ
+</h3>
+
+<p>
+Chuyên nghiệp - Tận tâm - Hiệu quả.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
 
 </div>
 
