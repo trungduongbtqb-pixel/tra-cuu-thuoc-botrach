@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
+<head> 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tra cứu thuốc - BVĐK Bố Trạch Quảng Trị</title>
@@ -14,7 +14,7 @@
 }
 
 body{
-
+    
     background:
 
     linear-gradient(
@@ -760,11 +760,1346 @@ body{
     z-index:2;
 
 }
-</style>
+/* ===========================
+   TỐI ƯU GIAO DIỆN ĐIỆN THOẠI
+   =========================== */
 
+@media(max-width:768px){
+
+
+/* Toàn trang */
+
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+
+/* Header */
+
+header{
+
+    padding:15px 10px 20px;
+
+    min-height:auto;
+
+}
+
+
+.logo{
+
+    position:static;
+
+    margin-bottom:10px;
+
+}
+
+
+.logo img{
+
+    width:70px;
+    height:70px;
+
+}
+
+
+header h1{
+
+    font-size:18px;
+
+    line-height:1.4;
+
+    padding:0 10px;
+
+}
+
+
+/* Nút chuyển giao diện */
+
+.view-switcher{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+.view-switcher button{
+
+    width:90%;
+
+    margin:5px auto;
+
+}
+
+
+
+/* Dark mode button */
+
+#themeBtn{
+
+    position:static;
+
+    margin-top:10px;
+
+}
+
+
+
+/* Banner */
+
+.banner{
+
+    min-height:0;
+
+    padding:15px 10px;
+
+}
+
+
+.banner-content{
+
+    min-width:0;
+
+    width:100%;
+
+    padding:20px 15px;
+
+}
+
+
+.banner-content h2{
+
+    font-size:22px;
+
+    line-height:1.4;
+
+}
+
+
+.banner-content p,
+.banner-content li{
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+
+
+/* Layout chính */
+
+.main-layout{
+
+    width:100%;
+
+    padding:10px;
+
+    margin:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+.left-column,
+.center-column,
+.right-column{
+
+    width:100%;
+
+}
+
+
+
+/* QR */
+
+.qr-box-side{
+
+    padding:15px;
+
+}
+
+
+.qr-box-side img{
+
+    width:150px;
+
+}
+
+
+
+/* Khung nội dung */
+
+.section,
+.hospital-box{
+
+    padding:15px;
+
+    margin:0;
+
+    width:100%;
+
+}
+
+
+
+/* Tiêu đề */
+
+.section-title{
+
+    font-size:17px;
+
+    text-align:center;
+
+}
+
+
+
+/* Ô tìm kiếm */
+
+.search-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+input[type=text]{
+
+
+    width:100%;
+
+    font-size:16px;
+
+    padding:12px;
+
+}
+
+
+.search-box button{
+
+    width:100%;
+
+}
+
+
+
+/* Gợi ý tìm kiếm */
+
+
+.suggestion-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.suggestion-item{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+
+
+/* Bảng thông tin thuốc */
+
+
+.result{
+
+    width:100%;
+
+    overflow-x:auto;
+
+}
+
+
+table{
+
+    min-width:650px;
+
+    font-size:14px;
+
+}
+
+
+
+/* Hình bệnh viện */
+
+
+.hospital-box img{
+
+    height:180px;
+
+}
+
+
+.hospital-content{
+
+    text-align:center;
+
+}
+
+
+.hospital-content h3{
+
+    font-size:17px;
+
+}
+
+
+/* Ảnh động */
+
+
+.drug-banner-animation{
+
+    height:120px;
+
+}
+
+
+.drug-banner-animation img{
+
+    object-fit:cover;
+
+}
+
+
+
+/* Footer */
+
+footer{
+
+    font-size:14px;
+
+    padding:15px;
+
+}
+
+
+}
+
+
+/* Điện thoại nhỏ 320-390px */
+
+@media(max-width:390px){
+
+
+header h1{
+
+    font-size:16px;
+
+}
+
+
+.banner-content h2{
+
+    font-size:20px;
+
+}
+
+
+.section{
+
+    padding:10px;
+
+}
+
+
+.qr-box-side img{
+
+    width:130px;
+
+}
+
+
+}
+/* =================================
+   MOBILE APP STYLE
+================================= */
+
+
+.mobile-bottom-menu{
+
+display:none;
+
+}
+
+
+
+/* Chỉ kích hoạt trên điện thoại */
+
+@media(max-width:768px){
+
+
+
+body{
+
+padding-bottom:75px;
+
+}
+
+
+
+/* HEADER APP */
+
+
+header{
+
+background:
+linear-gradient(
+rgba(0,105,92,.95),
+rgba(0,77,64,.95)
+);
+
+padding:12px;
+
+}
+
+
+
+.logo img{
+
+width:60px;
+height:60px;
+
+}
+
+
+
+header h1{
+
+font-size:16px;
+
+margin-top:5px;
+
+}
+
+
+
+.view-switcher,
+#themeBtn{
+
+display:none;
+
+}
+
+
+
+/* Banner thành thẻ giới thiệu */
+
+
+.banner{
+
+min-height:auto;
+
+padding:10px;
+
+background:none;
+
+}
+
+
+
+.banner-content{
+
+background:
+linear-gradient(
+135deg,
+#00796b,
+#004d40
+);
+
+border-radius:20px;
+
+padding:20px;
+
+}
+
+
+
+.banner-content h2{
+
+font-size:21px;
+
+}
+
+
+
+.banner-content p,
+.banner-content ul{
+
+display:none;
+
+}
+
+
+
+/* Layout */
+
+
+.main-layout{
+
+width:100%;
+
+padding:10px;
+
+display:block;
+
+}
+
+
+
+.left-column,
+.center-column,
+.right-column{
+
+width:100%;
+
+}
+
+
+
+/* Ẩn ảnh phụ để ưu tiên tra cứu */
+
+
+.right-column{
+
+display:none;
+
+}
+
+
+
+/* QR */
+
+.qr-box-side{
+
+border-radius:20px;
+
+padding:20px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.qr-box-side h3{
+
+font-size:18px;
+
+}
+
+
+
+.qr-box-side img{
+
+width:140px;
+
+}
+
+
+
+/* Các khung tìm kiếm */
+
+
+.section{
+
+border-radius:20px;
+
+padding:15px;
+
+margin-bottom:15px;
+
+}
+
+
+
+/* tiêu đề */
+
+
+.section-title{
+
+border-radius:15px;
+
+font-size:18px;
+
+text-align:center;
+
+}
+
+
+
+/* Ô nhập */
+
+input[type=text]{
+
+
+height:55px;
+
+border-radius:15px;
+
+font-size:17px;
+
+padding-left:20px;
+
+
+}
+
+
+
+/* nút tra cứu */
+
+
+.search-box button{
+
+
+height:55px;
+
+font-size:18px;
+
+font-weight:bold;
+
+border-radius:15px;
+
+
+}
+
+
+
+/* Gợi ý */
+
+
+.suggestion-item{
+
+border-radius:15px;
+
+padding:12px;
+
+}
+
+
+
+/* Kết quả thuốc */
+
+
+.result{
+
+border-radius:15px;
+
+overflow:hidden;
+
+}
+
+
+
+.result table{
+
+min-width:100%;
+
+}
+
+
+
+.result table tr{
+
+display:block;
+
+margin-bottom:10px;
+
+}
+
+
+
+.result th{
+
+display:block;
+
+font-size:14px;
+
+}
+
+
+
+.result td{
+
+display:block;
+
+background:white;
+
+line-height:1.5;
+
+}
+
+
+
+/* ảnh động */
+
+
+.drug-banner-animation{
+
+display:none;
+
+}
+
+
+
+/* =====================
+   MENU DƯỚI APP
+===================== */
+
+
+.mobile-bottom-menu{
+
+
+display:flex;
+
+position:fixed;
+
+bottom:0;
+
+left:0;
+
+right:0;
+
+height:70px;
+
+background:white;
+
+z-index:9999;
+
+box-shadow:
+0 -3px 15px rgba(0,0,0,.15);
+
+justify-content:space-around;
+
+
+}
+
+
+
+.mobile-bottom-menu a{
+
+
+flex:1;
+
+text-align:center;
+
+text-decoration:none;
+
+color:#00695c;
+
+font-size:12px;
+
+font-weight:bold;
+
+padding-top:8px;
+
+
+}
+
+
+
+.mobile-bottom-menu span{
+
+
+display:block;
+
+font-size:25px;
+
+margin-bottom:3px;
+
+
+}
+
+
+
+/* Dark mode */
+
+
+.dark-mode .mobile-bottom-menu{
+
+background:#222;
+
+}
+
+
+.dark-mode .mobile-bottom-menu a{
+
+color:white;
+
+}
+
+
+
+}
+
+
+
+/* Màn hình rất nhỏ */
+
+@media(max-width:390px){
+
+
+.mobile-bottom-menu{
+
+height:65px;
+
+}
+
+
+.mobile-bottom-menu span{
+
+font-size:22px;
+
+}
+
+
+}
+/* ============================
+   DRUG CARD MOBILE
+============================ */
+
+
+.drug-card{
+
+display:none;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+
+.drug-card{
+
+display:block;
+
+background:white;
+
+border-radius:20px;
+
+padding:15px;
+
+box-shadow:
+0 4px 15px rgba(0,0,0,.12);
+
+margin-top:15px;
+
+}
+
+
+
+.drug-card-header{
+
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+background:
+linear-gradient(
+135deg,
+#00796b,
+#004d40
+);
+
+color:white;
+
+padding:15px;
+
+border-radius:15px;
+
+
+}
+
+
+
+.drug-icon{
+
+
+font-size:35px;
+
+
+}
+
+
+
+.drug-card-header h2{
+
+
+font-size:20px;
+
+margin:0;
+
+line-height:1.4;
+
+
+}
+
+
+.drug-card-header p{
+
+
+margin-top:5px;
+
+font-size:14px;
+
+}
+
+
+
+
+.drug-info{
+
+
+margin-top:15px;
+
+
+}
+
+
+
+.drug-item{
+
+
+padding:12px;
+
+border-bottom:
+1px solid #eee;
+
+
+}
+
+
+
+.drug-item span{
+
+
+font-weight:bold;
+
+color:#00796b;
+
+font-size:15px;
+
+
+}
+
+
+
+.drug-item p{
+
+
+margin-top:6px;
+
+font-size:15px;
+
+line-height:1.6;
+
+
+}
+
+
+
+/* chống chỉ định */
+
+
+.drug-item.warning{
+
+
+background:#fff3cd;
+
+border-radius:12px;
+
+border-left:
+5px solid #ff9800;
+
+
+}
+
+
+
+/* liều dùng */
+
+
+.drug-item.dose{
+
+
+background:#e8f5e9;
+
+border-radius:12px;
+
+border-left:
+5px solid #2e7d32;
+
+
+}
+
+
+}
+
+
+
+/* Máy tính không hiện card */
+
+@media(min-width:769px){
+
+.drug-card{
+
+display:none!important;
+
+}
+
+}
+#loadingBox{
+
+position:fixed;
+
+top:20px;
+
+right:20px;
+
+background:#00796b;
+
+color:white;
+
+padding:12px 20px;
+
+border-radius:20px;
+
+z-index:9999;
+
+display:none;
+
+font-weight:bold;
+
+}
+
+
+@media(max-width:768px){
+
+#loadingBox{
+
+top:10px;
+
+right:10px;
+
+font-size:13px;
+
+}
+
+}
+/* ============================
+   DANH SÁCH NHIỀU THUỐC
+   ============================ */
+
+
+.drug-mini-card{
+
+
+background:white;
+
+border-radius:15px;
+
+padding:15px;
+
+margin-top:12px;
+
+cursor:pointer;
+
+box-shadow:
+0 3px 10px rgba(0,0,0,0.15);
+
+transition:0.25s;
+
+
+}
+
+
+
+.drug-mini-card:hover{
+
+
+transform:translateY(-3px);
+
+box-shadow:
+0 6px 15px rgba(0,0,0,0.2);
+
+
+}
+
+
+
+.drug-mini-card h3{
+
+
+color:#00796b;
+
+font-size:18px;
+
+margin-bottom:8px;
+
+
+}
+
+
+
+.drug-mini-card p{
+
+
+font-size:15px;
+
+line-height:1.5;
+
+margin:5px 0;
+
+color:#555;
+
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+
+.drug-mini-card{
+
+
+padding:18px;
+
+border-radius:18px;
+
+
+}
+
+
+.drug-mini-card h3{
+
+font-size:17px;
+
+}
+
+
+}
+/* ======================
+   LỊCH SỬ THUỐC
+====================== */
+
+
+.history-box{
+
+background:rgba(255,255,255,0.75);
+
+backdrop-filter:blur(8px);
+
+padding:20px;
+
+margin-top:20px;
+
+border-radius:10px;
+
+box-shadow:
+0 0 10px rgba(0,0,0,0.08);
+
+}
+
+
+
+.history-box h3{
+
+color:#00796b;
+
+margin-bottom:15px;
+
+}
+
+
+
+.history-item{
+
+
+background:white;
+
+padding:12px;
+
+margin-top:10px;
+
+border-radius:12px;
+
+cursor:pointer;
+
+box-shadow:
+0 2px 8px rgba(0,0,0,0.1);
+
+
+}
+
+
+
+.history-item:hover{
+
+transform:translateX(5px);
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.history-box{
+
+border-radius:20px;
+
+padding:15px;
+
+}
+
+
+}
+.copy-btn{
+
+
+background:#00796b;
+
+color:white;
+
+border:none;
+
+padding:12px 18px;
+
+border-radius:12px;
+
+cursor:pointer;
+
+font-size:15px;
+
+margin-top:15px;
+
+
+}
+
+
+
+.copy-btn:hover{
+
+
+opacity:0.85;
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.copy-btn{
+
+
+width:100%;
+
+font-size:16px;
+
+
+}
+
+
+}
+/* ===========================
+   CHỮ CHẠY QUA LẠI
+=========================== */
+
+.safety-message{
+
+    margin-top:25px;
+
+    overflow:hidden;
+
+    width:100%;
+
+    background:rgba(255,255,255,0.15);
+
+    border-radius:10px;
+
+    padding:12px 0;
+
+}
+
+
+.safety-message span{
+
+    display:inline-block;
+
+    white-space:nowrap;
+
+    color:#ffeb3b;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    animation:safetyMove 6s ease-in-out infinite alternate;
+
+}
+
+
+
+/* Di chuyển qua lại */
+
+@keyframes safetyMove{
+
+
+    from{
+
+        transform:translateX(-30%);
+
+    }
+
+
+    to{
+
+        transform:translateX(30%);
+
+    }
+
+
+}
+</style>
+<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
+
+<div id="loadingBox">
+⏳ Đang tải dữ liệu thuốc...
+</div>
+
+
+
 
 <header>
 
@@ -810,6 +2145,11 @@ body{
         <li>Chống chỉ định; Cách dùng; Liều dùng</li>
         
     </ul>
+    <div class="safety-message">
+    <span>
+        🛡️ An toàn của người bệnh là mục tiêu phấn đấu của chúng tôi 🛡️
+    </span>
+</div>
 
 </div>
 
@@ -819,11 +2159,10 @@ body{
 
 
 <!-- CỘT TRÁI QR -->
-
 <div class="left-column">
 
 
-<div class="qr-box-side">
+    <div class="qr-box-side" id="qr-area">
 
 <h3>TRUY CẬP WEBSITE</h3>
 
@@ -859,8 +2198,24 @@ alt="Website bệnh viện">
 
 
 </div>
-</div>
 
+    </div>
+    <!-- LỊCH SỬ THUỐC -->
+
+    <div class="history-box">
+
+
+    <h3>
+    🕒 Thuốc xem gần đây
+    </h3>
+
+
+    <div id="drugHistoryList">
+
+    </div>
+
+
+</div>
 
 </div>
 
@@ -868,7 +2223,7 @@ alt="Website bệnh viện">
 
 <!-- CỘT GIỮA TRA CỨU -->
 
-<div class="center-column">
+<div class="center-column" id="search-area">
 
 
 <div class="section">
@@ -1061,22 +2416,84 @@ let drugDatabase = [];
 const SHEET_URL =
 "https://docs.google.com/spreadsheets/d/17u-WcxJUe0Q478fWJFO4oe4IY-_W2UNbgvjO1JV6zfE/export?format=csv&gid=1953360248";
 
-Papa.parse(SHEET_URL, {
-    download: true,
-    header: true,
+let dataLoaded=false;
 
-    complete:function(results){
 
-        drugDatabase = results.data;
+function showLoading(){
 
-        console.log(
-            "Đã tải",
-            drugDatabase.length,
-            "thuốc"
-        );
-    }
+
+let box =
+document.getElementById("loadingBox");
+
+
+if(box){
+
+box.style.display="block";
+
+}
+
+
+}
+
+
+
+
+function hideLoading(){
+
+
+let box =
+document.getElementById("loadingBox");
+
+
+if(box){
+
+box.style.display="none";
+
+}
+
+
+}
+
+
+
+
+
+
+showLoading();
+
+
+
+Papa.parse(SHEET_URL,{
+
+download:true,
+
+header:true,
+
+
+complete:function(results){
+
+
+drugDatabase = results.data;
+
+
+dataLoaded=true;
+
+
+hideLoading();
+
+
+
+console.log(
+"Đã tải",
+drugDatabase.length,
+"thuốc"
+);
+
+
+}
+
+
 });
-
 function createTable(drug){
 
 return `
@@ -1122,13 +2539,505 @@ return `
 <th>Cách dùng - Liều dùng</th>
 <td>${drug["Cách dùng - Liều dùng"] || ""}</td>
 </tr>
+<tr>
 
+<td colspan="2">
+
+
+<button 
+class="copy-btn"
+onclick='copyDrugInfo(${JSON.stringify(drug)})'>
+
+📋 Sao chép thông tin thuốc
+
+</button>
+
+
+</td>
+
+
+</tr>
 </table>
 
 `;
 
 }
+// =============================
+// SAO CHÉP THÔNG TIN THUỐC
+// =============================
 
+function copyDrugInfo(drug){
+
+
+let text = 
+`
+Tên thuốc:
+${drug["Tên thuốc"] || ""}
+
+
+Mã ATC:
+${drug["Mã ATC"] || ""}
+
+
+Hoạt chất:
+${drug["Tên hoạt chất - HL"] || ""}
+
+
+Dạng bào chế:
+${drug["Dạng bào chế"] || ""}
+
+
+Đường dùng:
+${drug["Đường dùng"] || ""}
+
+
+Chỉ định:
+${drug["Chỉ định"] || ""}
+
+
+Liều dùng:
+${drug["Liều dùng"] || ""}
+`;
+
+
+
+navigator.clipboard.writeText(text)
+.then(()=>{
+
+
+alert("✅ Đã sao chép thông tin thuốc");
+
+
+})
+.catch(()=>{
+
+
+alert("Không thể sao chép");
+
+
+});
+
+
+}
+function createDrugCard(drug){
+
+return `
+
+<div class="drug-card">
+
+
+<div class="drug-card-header">
+
+    <div class="drug-icon">
+        💊
+    </div>
+
+    <div>
+
+        <h2>
+        ${drug["Tên thuốc"] || ""}
+        </h2>
+
+        <p>
+        Mã ATC: ${drug["Mã ATC"] || ""}
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<div class="drug-info">
+
+
+<div class="drug-item">
+
+<span>🧪 Hoạt chất</span>
+
+<p>
+${drug["Tên hoạt chất - HL"] || ""}
+</p>
+
+</div>
+
+
+
+<div class="drug-item">
+
+<span>📦 Dạng bào chế</span>
+
+<p>
+${drug["ĐVT - Bào chế"] || ""}
+</p>
+
+</div>
+
+
+
+<div class="drug-item">
+
+<span>🏭 Nhà sản xuất</span>
+
+<p>
+${drug["NSX"] || ""}
+</p>
+
+</div>
+
+
+<div class="drug-item">
+
+<span>⚕️ Chỉ định</span>
+
+<p>
+${drug["Chỉ định"] || ""}
+</p>
+
+</div>
+
+
+
+<div class="drug-item warning">
+
+<span>⚠️ Chống chỉ định</span>
+
+<p>
+${drug["Chống chỉ định"] || ""}
+</p>
+
+</div>
+
+
+
+<div class="drug-item dose">
+
+<span>💉 Cách dùng - Liều dùng</span>
+
+<p>
+${drug["Cách dùng - Liều dùng"] || ""}
+</p>
+
+</div>
+
+
+</div>
+
+<button 
+class="copy-btn"
+onclick='copyDrugInfo(${JSON.stringify(drug)})'>
+
+📋 Sao chép thông tin thuốc
+
+</button>
+</div>
+
+
+`;
+
+}
+function createDrugList(results){
+
+
+let html="";
+
+
+results.forEach((drug,index)=>{
+
+
+html+=`
+
+<div class="drug-mini-card"
+onclick="showDrug(${index})">
+
+
+<h3>
+💊 ${drug["Tên thuốc"]}
+</h3>
+
+
+<p>
+ATC:
+${drug["Mã ATC"] || ""}
+</p>
+
+
+<p>
+${drug["Tên hoạt chất - HL"] || ""}
+</p>
+
+
+</div>
+
+
+`;
+
+
+});
+
+
+window.searchResults=results;
+
+
+return html;
+
+
+}
+function showDrug(index){
+
+
+let drug =
+window.searchResults[index];
+
+saveDrugHistory(drug);
+let result =
+document.getElementById("drugNameResult");
+
+
+result.style.display="block";
+
+
+if(window.innerWidth <= 768){
+
+
+result.innerHTML =
+createDrugCard(drug);
+
+
+}else{
+
+
+result.innerHTML =
+createTable(drug);
+
+
+}
+
+
+}
+// =============================
+// LƯU LỊCH SỬ THUỐC
+// =============================
+
+function saveDrugHistory(drug){
+
+if(!drug) return;
+let history =
+JSON.parse(
+localStorage.getItem("drugHistory")
+)
+|| [];
+
+
+
+/*
+Xóa thuốc cũ nếu đã tồn tại
+để đưa thuốc vừa xem lên đầu
+*/
+
+history =
+history.filter(item =>
+
+item["Tên thuốc"]
+!== drug["Tên thuốc"]
+
+);
+
+
+
+/*
+Thêm thuốc mới vào đầu
+*/
+
+history.unshift(drug);
+
+
+
+/*
+Chỉ giữ 10 thuốc gần nhất
+*/
+
+history =
+history.slice(0,10);
+
+
+
+localStorage.setItem(
+
+"drugHistory",
+
+JSON.stringify(history)
+
+);
+
+
+}
+// =============================
+// HIỂN THỊ LỊCH SỬ THUỐC
+// =============================
+
+
+function showDrugHistory(){
+
+
+let box =
+document.getElementById(
+"drugHistoryList"
+);
+
+
+
+if(!box) return;
+
+
+
+let history =
+JSON.parse(
+
+localStorage.getItem("drugHistory")
+
+)
+|| [];
+
+
+
+box.innerHTML="";
+
+
+
+if(history.length===0){
+
+
+box.innerHTML =
+"Chưa có thuốc đã xem";
+
+
+return;
+
+
+}
+
+
+
+history.forEach((drug,index)=>{
+
+
+box.innerHTML += `
+
+
+<div class="history-item"
+onclick="openHistoryDrug(${index})">
+
+
+💊 ${drug["Tên thuốc"]}
+
+
+</div>
+
+
+`;
+
+
+});
+
+
+
+window.historyDrugList = history;
+
+
+}
+function openHistoryDrug(index){
+
+
+let drug =
+window.historyDrugList[index];
+
+
+
+let result =
+document.getElementById(
+"drugNameResult"
+);
+
+
+
+result.style.display="block";
+
+
+
+if(window.innerWidth <= 768){
+
+
+result.innerHTML =
+createDrugCard(drug);
+
+
+
+}else{
+
+
+result.innerHTML =
+createTable(drug);
+
+
+}
+
+
+}
+function searchDrugName(){
+
+
+let keyword =
+document.getElementById("drugNameInput")
+.value
+.trim()
+.toLowerCase();
+
+
+
+let resultDiv =
+document.getElementById("drugNameResult");
+
+
+
+let results =
+drugDatabase.filter(item =>
+
+
+(item["Tên thuốc"] || "")
+.toLowerCase()
+.includes(keyword)
+
+
+);
+
+
+
+if(results.length > 0){
+
+
+resultDiv.style.display="block";
+
+
+resultDiv.innerHTML =
+createDrugList(results);
+
+
+
+}else{
+
+
+resultDiv.style.display="block";
+
+
+resultDiv.innerHTML =
+"Không tìm thấy thuốc";
+
+
+}
+
+
+}
 function searchATC(){
 
 let keyword =
@@ -1152,7 +3061,15 @@ drugDatabase.find(item =>
 if(drug){
 
 result.style.display="block";
-result.innerHTML=createTable(drug);
+if(window.innerWidth <= 768){
+
+    result.innerHTML=createDrugCard(drug);
+
+}else{
+
+    result.innerHTML=createTable(drug);
+
+}
 
 }else{
 
@@ -1162,80 +3079,7 @@ result.innerHTML="Không tìm thấy thuốc.";
 }
 
 }
-function searchDrugName(){
 
-    let keyword =
-    document.getElementById("drugNameInput")
-    .value.trim().toLowerCase();
-
-    let resultDiv =
-    document.getElementById("drugNameResult");
-
-    let result =
-    drugDatabase.find(item =>
-        item["Tên thuốc"]
-        .toLowerCase()
-        .includes(keyword)
-    );
-
-    if(result){
-
-        resultDiv.style.display = "block";
-
-        resultDiv.innerHTML = `
-        <table>
-            <tr>
-                <th>Mã ATC</th>
-                <td>${result["Mã ATC"] || ""}</td>
-            </tr>
-
-            <tr>
-                <th>Tên thuốc</th>
-                <td>${result["Tên thuốc"] || ""}</td>
-            </tr>
-
-            <tr>
-                <th>Hoạt chất, hàm lượng</th>
-                <td>${result["Tên hoạt chất - HL"] || ""}</td>
-            </tr>
-
-            <tr>
-                <th>Đơn vị tính bào chế</th>
-                <td>${result["ĐVT - Bào chế"] || ""}</td>
-            </tr>
-
-            <tr>
-                <th>Nhà sản xuất</th>
-                <td>${result["NSX"] || ""}</td>
-            </tr>
-
-            <tr>
-                <th>Chỉ định</th>
-                <td>${result["Chỉ định"] || ""}</td>
-            </tr>
-
-            <tr>
-                <th>Chống chỉ định</th>
-                <td>${result["Chống chỉ định"] || ""}</td>
-            </tr>
-
-            <tr>
-                <th>Cách dùng, liều dùng</th>
-                <td>${result["Cách dùng - Liều dùng"] || ""}</td>
-            </tr>
-        </table>
-        `;
-
-    }else{
-
-        resultDiv.style.display = "block";
-
-        resultDiv.innerHTML =
-        "Không tìm thấy thuốc.";
-
-    }
-
-}
 function searchActive(){
 
 let keyword =
@@ -1259,7 +3103,15 @@ drugDatabase.find(item =>
 if(drug){
 
 result.style.display="block";
-result.innerHTML=createTable(drug);
+if(window.innerWidth <= 768){
+
+    result.innerHTML=createDrugCard(drug);
+
+}else{
+
+    result.innerHTML=createTable(drug);
+
+}
 
 }else{
 
@@ -1318,7 +3170,8 @@ function setMobileView(){
 /* TỰ ĐỘNG NHỚ LẦN CHỌN TRƯỚC */
 
 window.onload = function(){
-
+    detectDevice();
+    showDrugHistory();
     let savedMode =
     localStorage.getItem("viewMode");
 
@@ -1426,5 +3279,34 @@ createSuggest(
 );
 
 </script>
+<!-- MOBILE APP MENU -->
+
+<nav class="mobile-bottom-menu">
+
+<a href="#">
+<span>🏥</span>
+Trang chủ
+</a>
+
+
+<a href="#search-area">
+<span>🔍</span>
+Tra cứu
+</a>
+
+
+<a href="#qr-area">
+<span>📱</span>
+QR
+</a>
+
+
+<a href="#contact-area">
+<span>☎️</span>
+Liên hệ
+</a>
+
+
+</nav>
 </body>
 </html>
